@@ -1,0 +1,56 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffe4e9;  /* rosa muy suave */
+  padding: 1rem 3rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  border-radius: 0 0 20px 20px;
+  font-family: 'Segoe UI', 'Poppins', sans-serif;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #f9a8d4;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #b3436e;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #b3436e;
+  transition: 0.3s;
+  padding: 6px 12px;
+  border-radius: 30px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background-color: #f9a8d4;
+  color: white;
+}
