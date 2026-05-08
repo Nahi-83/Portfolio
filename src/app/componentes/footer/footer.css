@@ -1,19 +1,7 @@
 .footer {
   background-color: #ffe4e9;
   text-align: center;
-  padding: 1.3rem;
+  padding: 1rem;
   color: #b3436e;
-  font-size: 0.9rem;
   margin-top: 2rem;
-  border-radius: 20px 20px 0 0;
-}
-
-.redes a {
-  color: #d77a9e;
-  text-decoration: none;
-  margin: 0 8px;
-}
-
-.redes a:hover {
-  text-decoration: underline;
 }
