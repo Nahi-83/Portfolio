@@ -253,14 +253,6 @@ background:  #f8fafc;
   margin-bottom: 4px;
 }
 
-.contactInfo a, .contactInfo .numero {
-  font-size: 1.1rem;
-  font-weight: 500;
-  color: #2c5a8c;
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
 .contactInfo {
   color: #1e4468;
   text-decoration: underline;
