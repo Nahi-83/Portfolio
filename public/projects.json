@@ -1,0 +1,16 @@
+[
+    {
+      "tituloProyecto": "Gestión de tesoros",
+      "descripcion": "Trabajo de gestión de Tesoros descubiertos realizado para la práctica de Python. Te permite agregar nuevos hallazgos, ordenar los tesoros según su valor y buscarlos según su estado de conservación mediante un menú interactivo.",
+      "rol": "Full stack",
+      "tecnologias": ["Python"],
+      "link": "https://github.com/Nahi-83/desafioTesoro"
+    },
+    {
+      "tituloProyecto": "Gestión de tesoros",
+      "descripcion": "Trabajo de gestión de Tesoros descubiertos realizado para la práctica de Python. Te permite agregar nuevos hallazgos, ordenar los tesoros según su valor y buscarlos según su estado de conservación mediante un menú interactivo.",
+      "rol": "Full stack",
+      "tecnologias": ["Python"],
+      "link": "https://github.com/Nahi-83/desafioTesoro"
+    }
+  ]

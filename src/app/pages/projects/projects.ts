@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import {Datos} from '../../servicios/datos'
 
 @Component({
   selector: 'app-projects',
@@ -6,4 +7,7 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './projects.html',
 })
-export class Projects {}
+export class Projects {
+  private datos = inject(Datos) 
+  proyectos = this.datos.devolverObjeto()
+}

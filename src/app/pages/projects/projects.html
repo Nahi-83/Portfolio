@@ -1,6 +1,6 @@
 <section class="proyectosContainer">
     <h2><strong>Mis proyectos</strong></h2> 
-    <div class="fondoProyecto">
+    <!-- <div class="fondoProyecto">
         <h3>Gestión de tesoros</h3>
         <p>Trabajo de gestión de Tesoros descubiertos realizado para la práctica de Python.</p>
         <p>Te permite agregar nuevos hallazgos, ordenar los tesoros según su valor y buscarlos según su estado de conservación mediante un menú interactivo.</p>
@@ -18,7 +18,7 @@
     </div>
     <div class="fondoProyecto">
         <h3>Desafio de Mario Bros</h3>
-        <p>Es un trabajo inspirado en Mario Bros, hecho con Python, usando Programación Orientada a Objetos (POO)</p>
+        <p>Es un trabajo inspirado en Mario Bros, hecho con Python, usando Programación Orientada a Objetos (POO).</p>
         <p>Este tiene un menú interactivo, donde podes elegir un personaje, como Mario o Luigi, también podes moverte, saltar, lanzar fuego o usar hongos mágicos.</p>
         <p><strong>Rol:</strong> Full Stack</p>
         <p><strong>Tecnología/s:</strong> Python</p>
@@ -26,10 +26,19 @@
     </div>
     <div class="fondoProyecto">
         <h3>Simulador de un dron</h3>
-        <p>Desafio hecho con Python para la práctica de los conocimientos adquiridos de Programación Orientada a Objetos (POO)</p>
+        <p>Desafio hecho con Python para la práctica de los conocimientos adquiridos de Programación Orientada a Objetos (POO).</p>
         <p>Simula el funcionamiento de un dron, este cuenta con un menú interactivos, que le permite al usuario ingresar datos a elección del dron y se puede realizar diferentes acciones.</p>
         <p><strong>Rol:</strong> Full Stack</p>
         <p><strong>Tecnología/s:</strong> Python</p>
         <a href="https://github.com/Nahi-83/Desafio-de-POO" target="_blank" class="linkGithub">Ver en Github</a>
+    </div> -->
+    @for (proyecto of proyectos; track $index) {
+    <div class="fondoProyecto">
+        <h3>{{proyecto.tituloProyecto}}</h3>
+        <p>{{proyecto.descripcion}}</p>
+        <p><strong>Rol:</strong>{{proyecto.rol}}</p>
+        <p><strong>Tecnología/s:</strong>{{proyecto.tecnologias}}</p>
+        <a [href]="proyecto.link" target="_blank" class="linkGithub">Ver en Github</a>
     </div>
+    }
 </section>
