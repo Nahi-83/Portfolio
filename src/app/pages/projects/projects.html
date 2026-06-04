@@ -1,6 +1,6 @@
 <section class="proyectosContainer">
     <h2><strong>Mis proyectos</strong></h2> 
-    <!-- <div class="fondoProyecto">
+    <div class="fondoProyecto">
         <h3>Gestión de tesoros</h3>
         <p>Trabajo de gestión de Tesoros descubiertos realizado para la práctica de Python.</p>
         <p>Te permite agregar nuevos hallazgos, ordenar los tesoros según su valor y buscarlos según su estado de conservación mediante un menú interactivo.</p>
@@ -31,14 +31,5 @@
         <p><strong>Rol:</strong> Full Stack</p>
         <p><strong>Tecnología/s:</strong> Python</p>
         <a href="https://github.com/Nahi-83/Desafio-de-POO" target="_blank" class="linkGithub">Ver en Github</a>
-    </div> -->
-    @for (proyecto of proyectos; track $index) {
-    <div class="fondoProyecto">
-        <h3>{{proyecto.tituloProyecto}}</h3>
-        <p>{{proyecto.descripcion}}</p>
-        <p><strong>Rol:</strong>{{proyecto.rol}}</p>
-        <p><strong>Tecnología/s:</strong>{{proyecto.tecnologias}}</p>
-        <a [href]="proyecto.link" target="_blank" class="linkGithub">Ver en Github</a>
-    </div>
-    }
-</section>
+    </div> 
+

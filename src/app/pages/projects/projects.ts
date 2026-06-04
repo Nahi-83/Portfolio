@@ -1,5 +1,6 @@
-import { Component, inject } from '@angular/core';
-import {Datos} from '../../servicios/datos'
+import { Component} from '@angular/core';
+import { ProjectsService } from '../../service/data';
+
 
 @Component({
   selector: 'app-projects',
@@ -8,6 +9,13 @@ import {Datos} from '../../servicios/datos'
   templateUrl: './projects.html',
 })
 export class Projects {
-  private datos = inject(Datos) 
-  proyectos = this.datos.devolverObjeto()
+  constructor(private projectService:ProjectsService)
+  {
+    this.projectService.getProjects().subscribe({
+      next: (data) => console.log(data),
+      error: (error) => console.error(error),
+      complete: () => console.info('complete') 
+    })
+  }
 }
+

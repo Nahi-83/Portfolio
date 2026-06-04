@@ -1,0 +1,32 @@
+{
+    "projects": [
+        {
+        "tituloProyecto": "Gestión de tesoros",
+        "descripcion": "Trabajo de gestión de Tesoros descubiertos realizado para la práctica de Python. Te permite agregar nuevos hallazgos, ordenar los tesoros según su valor y buscarlos según su estado de conservación mediante un menú interactivo.",
+        "rol": "Full stack",
+        "tecnologias": ["Python"],
+        "link": "https://github.com/Nahi-83/desafioTesoro"
+        },
+        {
+        "tituloProyecto": "Gestión de turnos",
+        "descripcion": "Este trabajo está hecho con Python usando Programación Orientada a Objetos (POO). En él, encontrarás un menú interactivo, donde podes registrar pacientes, inciar sesión, sacar turnos y ver los turnos registrados.",
+        "rol": "Full stack",
+        "tecnologias": ["Python"],
+        "link": "https://github.com/Nahi-83/gestionDeTurnos"
+        },
+        {
+        "tituloProyecto": "Desafio de Mario Bros",
+        "descripcion": "Es un trabajo inspirado en Mario Bros, hecho con Python, usando Programación Orientada a Objetos (POO). Este tiene un menú interactivo, donde podes elegir un personaje, como Mario o Luigi, también podes moverte, saltar, lanzar fuego o usar hongos mágicos.",
+        "rol": "Full stack",
+        "tecnologias": ["Python"],
+        "link": "https://github.com/Nahi-83/DesafioMarioBros"
+        },
+        {
+        "tituloProyecto": "Simulador de un dron",
+        "descripcion": "Desafio hecho con Python para la práctica de los conocimientos adquiridos de Programación Orientada a Objetos (POO). Simula el funcionamiento de un dron, este cuenta con un menú interactivos, que le permite al usuario ingresar datos a elección del dron y se puede realizar diferentes acciones.",
+        "rol": "Full stack",
+        "tecnologias": ["Python"],
+        "link": "https://github.com/Nahi-83/Desafio-de-POO"
+        }
+    ]
+}
