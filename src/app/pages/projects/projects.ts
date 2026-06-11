@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { ChangeDetectorRef, Component} from '@angular/core';
 import { ProjectsService } from '../../service/data';
 
 
@@ -9,12 +9,21 @@ import { ProjectsService } from '../../service/data';
   templateUrl: './projects.html',
 })
 export class Projects {
-  constructor(private projectService:ProjectsService)
+
+  projectsList: any
+
+  constructor(private projectService:ProjectsService, private cdr:ChangeDetectorRef)
   {
     this.projectService.getProjects().subscribe({
-      next: (data) => console.log(data),
+      next: (data) => 
+      { console.log(data),
+        this.projectsList=data;   
+      },
       error: (error) => console.error(error),
-      complete: () => console.info('complete') 
+      complete: () => {
+        console.info('complete')
+        this.cdr.detectChanges()
+      }
     })
   }
 }
