@@ -7,6 +7,7 @@ import { Contacts } from './pages/contacts/contacts';
 
 
 export const routes: Routes = [
+    {path: '', redirectTo:"inicio", pathMatch:'full'},
     {path: 'navbar', component: Navbar},
     {path: 'inicio', component: Inicio},
     {path: 'about', component: About},
