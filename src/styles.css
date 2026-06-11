@@ -259,10 +259,10 @@ background:  #DDA7A5;
 
 .footer {
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
   background-color: #9d5959;
-  text-align: center;
   padding: 1rem;
   color: #F9F1F0;
   margin-top: 2rem;
