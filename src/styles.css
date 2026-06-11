@@ -10,7 +10,69 @@ body {
   color: #3D2525;
 }
 
+/*Navbar*/
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  background-color: #FFFFFF;
+  border-bottom: 2px solid #DDA7A5;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 4px 15px rgba(61, 37, 37, 0.08);
+}
+
+.marco {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.foto {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  padding: 3px;
+  box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
+  border: 2px solid #DDA7A5;
+}
+
+.foto img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.textoDelMarco {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #3D2525;
+}
+
+.linkNavbar {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.linkNavbar a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #3D2525;
+  padding: 8px 14px;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.linkNavbar a:hover {
+   background-color: #DDA7A5;
+  color: white;
+}
 
 /*Inicio*/
 
