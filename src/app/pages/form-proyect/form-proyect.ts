@@ -51,16 +51,16 @@ export class FormProyect {
       return;
 
     }
-      // Si el formulario es válido
+      // Si el formulario es válido se puede agregar a la base de datos. 
     this.projectService.addProject(this.projectForm.value).subscribe({
 
       next: (data) => {
 
         console.log("Proyecto agregado:", data);
 
-        alert("¡Proyecto agregado correctamente!");
+        alert("Proyecto agregado correctamente");
 
-        // Limpiamos el formulario
+     // Una vez que se agregue el proyecto, se limpia el formulario.
         this.projectForm.reset();
 
       },
