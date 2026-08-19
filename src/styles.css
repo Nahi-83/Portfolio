@@ -10,6 +10,15 @@ body {
   color: #3D2525;
 }
 
+/*Alerta*/
+.ng-valid:not(form).ng-touched   {
+    border-left: 5px solid #42A948; /* green */
+  }
+ 
+.ng-invalid:not(form).ng-touched  {
+    border-left: 5px solid #a94442; /* red */
+  }
+
 /*Navbar*/
 
 .navbar {
@@ -124,137 +133,8 @@ h1 {
   transform: translateY(-3px);
 }
 
-/*About*/
 
-.about {
-  min-height: 70vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #F9F1F0;
-  padding: 2rem;
-}
 
-.aboutFoto {
-  flex: 0 0 auto;
-  background: white;
-  border-radius: 32px;
-  padding: 1rem;
-  box-shadow: 0 10px 25px rgba(61, 37, 37, 0.08);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.aboutFoto img {
-  width: 280px;
-  height: auto;
-  border-radius: 24px;
-  object-fit: cover;
-  display: block;
-  box-shadow: 0 5px 12px rgba(0,0,0,0.1);
-  border: 3px solid #DDA7A5;
-  max-width: 200px;
-}
-
-@media (max-width: 800px) {
-
-  .aboutFoto img {
-    width: 200px;
-  }
-}
-
-.fondoAbout {
-  flex: 1;
-  max-width: 500px;
-  background: white;
-  border-radius: 32px;
-  padding: 2rem;
-  box-shadow: 0 10px 25px rgba(61, 37, 37, 0.08);
-  border-left: 8px solid #B86B68;
-  text-align: left;
-}
-
-.fondoAbout h2 {
-  color: #3D2525;
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-.fondoAbout p {
-  font-size: 1rem;
-  line-height: 1.5;
-  color:  #5E4343;
-  margin: 1rem 0;
-}
-
-/*Contacts*/
-
-.paginaContacto {
-  min-height: 70vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #F9F1F0;
-  padding: 2rem;
-}
-
-.fondoContacto {
-  max-width: 700px;
-  width: 100%;
-  background: white;
-  border-radius: 32px;
-  padding: 2rem ;
-  box-shadow: 0 10px 30px rgba(61, 37, 37, 0.08);
-  transition: transform 0.2s;
-  border: 1px solid #dce5ef;
-}
-
-.fondoContacto h2 {
-  color: #3D2525;
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-  font-weight: 600;
-}
-
-.contactCuadrado {
-  display: flex;
-  align-items: center;
-  gap: 1.2rem;
-  background: #FFF8F7;
-  padding: 1rem 1.2rem;
-  border-radius: 24px;
-  transition: all 0.2s;
-  border: 1px solid #E7D2D0;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.02);
-  margin-top: 1rem;
-}
-
-.contactCuadrado:hover {
-background:  #DDA7A5;
-  border-color: #f6aba9;
-  transform: translateX(5px);
-  box-shadow: 0 8px 20px rgba(221, 167, 165, 0.2);
-}
-
-.contactInfo {
-  display: flex;
-  flex-direction: column;
-  color: #B86B68;
-}
-
-.label{
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #DDA7A5;
-  margin-bottom: 4px;
-}
-
-.contactInfo a{
-  color: #ff6eb9;
-  text-decoration: underline;
-}
 /*Footer*/
 
 .footer {
@@ -275,53 +155,3 @@ background:  #DDA7A5;
   align-items: center;
 }
 
-/*Projects*/
-
-.proyectosContainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    background-color: #F9F1F0;
-    padding: 3rem 2rem;
-    text-align: center;
-}
-
-.proyectosContainer h2 {
-    grid-column: 1 / -1;
-    margin-bottom: 1rem;
-    color: #3D2525;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-}
-
-.fondoProyecto {
-    background: white;
-    border-radius: 32px;
-    padding: 1.5rem;
-    box-shadow: 0 8px 18px rgba(61, 37, 37, 0.08);
-    transition: 0.25s;
-    border-bottom: 5px solid #DDA7A5;
-}
-
-.fondoProyecto:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 25px rgba(184, 107, 104, 0.15);
-}
-
-.fondoProyecto h3 {
-    color: #3D2525;
-}
-
-.linkGithub {
-    display: inline-block;
-    margin-top: 1rem;
-    color: #B86B68;
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.2s;
-}
-
-.linkGithub:hover {
-    color: #DDA7A5;
-    text-decoration: underline;
-}

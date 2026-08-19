@@ -5,5 +5,6 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './contacts.html',
+  styleUrl: './contacts.css'
 })
 export class Contacts {}

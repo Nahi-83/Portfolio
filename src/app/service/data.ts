@@ -17,4 +17,9 @@ export class ProjectsService {
   {
     return this.http.get(this.urlApi);
   }
+
+  addProject(project: any): Observable<any> {
+    return this.http.post(this.urlApi, project);
+  }
+
 }

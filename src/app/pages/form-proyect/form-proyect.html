@@ -1,0 +1,98 @@
+<div class="paginaProyecto">
+
+  <div class="fondoProyectoForm">
+
+    <h2>Agregar proyecto</h2>
+
+    <form [formGroup]="projectForm" (ngSubmit)="agregarProyecto()">
+
+      <!-- TÍTULO -->
+      <div class="mb-3">
+
+        <label class="form-label"> Nombre del proyecto </label>
+
+        <input class="form-control" type="text" formControlName="tituloProyecto" placeholder="Ingrese el nombre del proyecto">
+
+        @if (TituloProyecto?.invalid && TituloProyecto?.touched) {
+
+          @if (TituloProyecto?.hasError("required")) {
+            <div class="text-danger"> El nombre del proyecto es obligatorio.</div>
+          }
+
+          @if (TituloProyecto?.hasError("minlength")) {
+            <div class="text-danger"> El nombre debe tener al menos 3 caracteres. </div>
+          }
+
+        }
+      </div>
+
+      <!-- DESCRIPCIÓN -->
+      <div class="mb-3">
+
+        <label class="form-label"> Descripción </label>
+
+        <textarea class="form-control" formControlName="descripcion" placeholder="Ingrese una descripción del proyecto"></textarea>
+
+        @if (Descripcion?.invalid && Descripcion?.touched) {
+
+          @if (Descripcion?.hasError("required")) {
+            <div class="text-danger"> La descripción es obligatoria. </div>
+          }
+
+          @if (Descripcion?.hasError("minlength")) {
+            <div class="text-danger"> La descripción debe tener al menos 10 caracteres. </div>
+          }
+
+        }
+      </div>
+
+
+      <!-- ROL --> 
+      <div class="mb-3">
+
+        <label class="form-label"> Rol </label>
+
+        <input class="form-control" type="text" formControlName="rol" placeholder="Ej: Full stack">
+
+        @if (Rol?.invalid && Rol?.touched) {
+
+          <div class="text-danger"> El rol es obligatorio. </div>
+
+        }
+      </div>
+
+
+      <!-- TECNOLOGÍAS -->
+      <div class="mb-3">
+
+        <label class="form-label"> Tecnología/s </label>
+
+        <input class="form-control" type="text" formControlName="tecnologias" placeholder="Ej: Python, Angular">
+
+        @if (Tecnologias?.invalid && Tecnologias?.touched) {
+
+          <div class="text-danger"> Debe ingresar al menos una tecnología.</div>
+        }
+      </div>
+
+      <div class="mb-4">
+
+        <label class="form-label"> Link de GitHub </label>
+
+        <input class="form-control" type="url" formControlName="link" placeholder="https://github.com/...">
+
+        @if (Link?.invalid && Link?.touched) {
+
+          <div class="text-danger"> El link de GitHub es obligatorio. </div>
+
+        }
+
+      </div>
+
+      <div>
+        <button class="btnProyecto" type="submit"> Agregar proyecto </button>
+      </div>
+
+    </form>
+  </div>
+</div>

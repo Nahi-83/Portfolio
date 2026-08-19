@@ -3,14 +3,13 @@
     
 
 @for (item of projectsList; track item.id){
- <div class="fondoProyecto">
+    <div class="fondoProyecto">
         <h3>{{item.tituloProyecto}}</h3>
-        <p>{{item.descripcion}}</p>
         <p>{{item.descripcion}}</p>
         <p><strong>Rol:</strong>{{item.rol}}</p>
         <p><strong>Tecnología/s:</strong>{{item.tecnologias}}</p>
         <a [href]="item.link" target="_blank" class="linkGithub">Ver en Github</a>
-    </div> 
+    </div>
 }
 
 @empty{

@@ -7,6 +7,7 @@ import { ProjectsService } from '../../service/data';
   standalone: true,
   imports: [],
   templateUrl: './projects.html',
+  styleUrl: './projects.css'
 })
 export class Projects {
 
@@ -16,7 +17,7 @@ export class Projects {
   {
     this.projectService.getProjects().subscribe({
       next: (data) => 
-      { console.log(data),
+      { console.log(data)
         this.projectsList=data;   
       },
       error: (error) => console.error(error),
