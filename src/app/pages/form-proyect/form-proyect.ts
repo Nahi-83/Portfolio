@@ -18,6 +18,7 @@ export class FormProyect {
     descripcion: ['', [Validators.required, Validators.minLength(10)]],
     rol: ['', [Validators.required]],
     tecnologias: ['', [Validators.required]],
+    link: ['', [Validators.required]]
     
   });
 
